@@ -1,9 +1,10 @@
 import React from "react";
+import ClientsContainer from "./ClientsContainer";
 
 const App = () => {
     return (
         <div>
-         <h2>Hello World</h2>
+         ClientsContainer
         </div>
     );
 };
