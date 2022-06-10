@@ -7,3 +7,14 @@ export const fetchClients = () => {
     }
 }
 
+export const addClient = client => {
+  return(dispatch) => {
+  fetch('http://localhost:3000/clients', {
+    method: 'POST',
+   body: JSON.stringify(client),
+   headers: {'Content-Type': 'application/json'}
+  })
+      .then(resp => resp.json())
+      .then(clients =>dispatch({type: 'ADD_CLIENT', payload: client}) )
+}
+}

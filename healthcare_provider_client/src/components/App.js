@@ -4,7 +4,7 @@ import ClientsContainer from "./ClientsContainer";
 const App = () => {
     return (
         <div>
-         ClientsContainer
+        < ClientsContainer />
         </div>
     );
 };
