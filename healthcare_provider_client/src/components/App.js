@@ -1,10 +1,10 @@
 import React from "react";
-import ClientsContainer from "./ClientsContainer";
+import Router from "./Router";
 
 const App = () => {
     return (
         <div>
-        < ClientsContainer />
+        < Router />
         </div>
     );
 };
