@@ -1,5 +1,6 @@
 class ClientsController < ApplicationController
   before_action :set_client, only: %i[ show update destroy ]
+  
 
   # GET /clients
   def index
@@ -46,6 +47,6 @@ class ClientsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def client_params
-      params.require(:client).permit(:name, :birth_date)
+      params.require(:client).permit(:name, :age, :birth_date, :caregiver_name, :caregiver_phone_number, :address)
     end
 end
