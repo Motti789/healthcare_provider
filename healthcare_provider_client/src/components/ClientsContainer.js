@@ -13,7 +13,7 @@ class ClientsContainer extends Component {
     render() {
         return(
             <div>
-           <ClientsForm />
+           
             </div>
         );
     }
