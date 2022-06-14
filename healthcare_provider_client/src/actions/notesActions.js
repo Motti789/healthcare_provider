@@ -8,10 +8,11 @@ export const fetchNotes = () => {
 }
 
 export const addNote = note => {
+  
   return dispatch => {
   fetch('http://localhost:3000/client_notes', {
     method: 'POST',
-   body: JSON.stringify(note),
+   body: JSON.stringify({notes: note}),
    headers: {'Content-Type': 'application/json'}
   })
       .then(resp => resp.json())

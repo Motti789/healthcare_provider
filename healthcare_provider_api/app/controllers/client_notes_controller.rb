@@ -1,5 +1,5 @@
 class ClientNotesController < ApplicationController
-  before_action :set_client_note, only: %i[ show update destroy ]
+ before_action :set_client_note, only: %i[ show update destroy ]
 
   # GET /client_notes
   def index
@@ -15,7 +15,9 @@ class ClientNotesController < ApplicationController
 
   # POST /client_notes
   def create
+    # binding.pry
     @client_note = ClientNote.new(client_note_params)
+   
 
     if @client_note.save
       render json: @client_note, status: :created, location: @client_note
@@ -47,5 +49,6 @@ class ClientNotesController < ApplicationController
     # Only allow a list of trusted parameters through.
     def client_note_params
       params.require(:client_note).permit(:notes)
+      
     end
 end
