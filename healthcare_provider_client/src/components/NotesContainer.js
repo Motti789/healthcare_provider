@@ -5,10 +5,14 @@ import NotesForm from './NotesForm';
 import NotesList from './NotesList';
 
 class NotesContainer extends Component {
+
+    componentDidMount() {
+        this.props.fetchNotes()
+    }
     render() {
         return(
             <div>
-
+           <NotesForm />
             </div>
         )
     }

@@ -5,27 +5,27 @@ import { connect } from 'react-redux';
 class NotesForm extends Component {
 
     state = {
-        text: ''
+        notes: ''
     }
 
-    handleOnChange = event => {
+    handleChange = event => {
         this.setState({
-          text: event.target.value
+          notes: event.target.value
         });
       }
 
 
     handleSubmit = event => {
         event.preventDefault()
-        this.props.addClient(this.state.text)
+        this.props.addNote(this.state.notes)
     }
 
     render() {
         return (
             <form onSubmit={this.handleSubmit}>
              <label>Note:</label>
-             <input type='text' value={this.state.text} onChange={this.handleChange}/>
-             <input type='submit' value="Add Client"/>
+             <input type='text' value={this.state.notes} onChange={this.handleChange}/>
+             <input type='submit' value="Add Note"/>
             </form>
         );
     }
