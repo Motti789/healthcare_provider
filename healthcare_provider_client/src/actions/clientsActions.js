@@ -7,6 +7,7 @@ export const fetchClients = () => {
     }
 }
 
+
 export const addClient = client => {
   return dispatch => {
   fetch('http://localhost:3000/clients', {

@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { Button } from 'react-bootstrap'
+import 'bootstrap/dist/css/bootstrap.min.css';
 import {addClient} from '../actions/clientsActions'
 import { connect } from 'react-redux';
 
@@ -9,7 +11,8 @@ class ClientsForm extends Component {
     age: '',
     birth_date: '',
     caregiver_name: '',
-    caregiver_phone_number: ''
+    caregiver_phone_number: '',
+    address: ''
     }
 
     handleChange = event => {
@@ -35,7 +38,7 @@ class ClientsForm extends Component {
                  <br/>
                 <label>Age: </label>
                 <input type='text' value={this.state.age} onChange={this.handleChange} name="age"/>
-                <br/>
+                <br/> 
                 <label>Date Of Birth: </label>
                 <input type='text' value={this.state.birth_date} onChange={this.handleChange} name="birth_date"/>
                 <br/>
@@ -44,6 +47,9 @@ class ClientsForm extends Component {
                 <br/>
                 <label>Phone Number: </label>
                 <input type='text' value={this.state.caregiver_phone_number} onChange={this.handleChange} name="caregiver_phone_number"/>
+                <br/>
+                <label>Address: </label>
+                <input type='text' value={this.state.address} onChange={this.handleChange} name="address"/>
                 <br/>
                 <input type='submit' value="Add Client"/>
             </form>
