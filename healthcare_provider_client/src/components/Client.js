@@ -1,24 +1,27 @@
 import React from "react";
-import { connect } from "react-redux";
+
+import { useSelector } from 'react-redux';
+import { useParams } from 'react-router-dom';
 
 
 
-const FilteredClient = ({clients}) => {
+
+const Client = () => {
+    const { id } = useParams();
+    const client = useSelector(state => state.clients.find(obj => obj.id === parseInt(id)))
+    console.log(client)
     return (
         <div>
-         {clients.map(client => <ul><li key={client.id}> {client.name}- {client.age} - {client.birth_date} - {client.caregiver_name} - {client.caregiver_phone_number} - {client.address}  </li></ul>)}
-         
+        
         </div>
         
     );
 };
 
-// const associatedNotes = notes.filter(note => note.client_id === clientId);
 
-const mapStateToProps = state => {
-    return {client: state.clients.find(client => client === client.id)}
-}
+// {client.id} - {client.name} - {client.age} - {client.birth_date} - {client.caregiver_name} - {client.caregiver_phone_number} - {client.address}
 
 
 
-export default connect(mapStateToProps, {})(FilteredClient)
+
+export default Client;

@@ -31,4 +31,8 @@ class NotesForm extends Component {
     }
 }
 
+
+
+
+
 export default connect(null, {addNote})(NotesForm)

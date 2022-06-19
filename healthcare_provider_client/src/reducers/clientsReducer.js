@@ -4,8 +4,6 @@ export const clientsReducer = (state = [], action) => {
          return action.payload
         case 'ADD_CLIENT':
             return [...state, action.payload]
-        case 'FETCH_CLIENT':
-             return action.payload
              
         default:
              return state

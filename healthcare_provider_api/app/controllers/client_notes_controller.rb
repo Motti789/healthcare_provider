@@ -15,7 +15,6 @@ class ClientNotesController < ApplicationController
 
   # POST /client_notes
   def create
-     binding.pry
     @client_note = ClientNote.new(client_note_params)
    
 
