@@ -28,3 +28,13 @@ body{
   .card-img-top{
       height: 200;
   }
+
+  .footer {
+    position: fixed;
+    right: 550;
+    bottom: 0;
+    width: 100%;
+   
+    color: white;
+    text-align: center;
+  }

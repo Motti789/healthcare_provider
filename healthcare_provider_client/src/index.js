@@ -6,7 +6,7 @@ import thunk from 'redux-thunk'
 import {composeWithDevTools} from 'redux-devtools-extension';
 import Navbar from "../src/components/Navbar";
 import { BrowserRouter as Router, Route, Navlink } from 'react-router-dom'
-import { Footer } from '../src/components/Footer'
+import  Footer from '../src/components/Footer'
 
 import App from './components/App'
 import {rootReducer} from './reducers/rootReducer'
@@ -20,7 +20,6 @@ ReactDom.render(
   <Provider store={store}>
     <Router>
     < Navbar />
-    {/* < Footer /> */}
     <App />
     </Router>
   </Provider>,

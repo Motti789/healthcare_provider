@@ -3,7 +3,9 @@ class ClientNotesController < ApplicationController
 
   # GET /client_notes
   def index
+    # binding.pry
     @client_notes = ClientNote.all
+    
 
     render json: @client_notes
   end
@@ -15,7 +17,7 @@ class ClientNotesController < ApplicationController
 
   # POST /client_notes
   def create
-    @client_note = ClientNote.new(client_note_params)
+    @client_note = @client.client_note.build(client_note_params)
    
 
     if @client_note.save
@@ -47,7 +49,7 @@ class ClientNotesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def client_note_params
-      params.require(:client_note).permit(:notes)
+      params.require(:client_note).permit(:notes, :client_id)
       
     end
 end

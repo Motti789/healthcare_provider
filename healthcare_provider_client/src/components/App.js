@@ -6,6 +6,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import ClientsContainer from "./ClientsContainer";
 import NotesContainer from "./NotesContainer";
 import '../App.css';
+import NotesList from "./NotesList";
+import Footer from "./Footer";
 
 
 const App = () => {
@@ -13,6 +15,7 @@ const App = () => {
         <div>
         <ClientsContainer />
         {/* <NotesContainer /> */}
+        <Footer/>
         < Router />
         
         </div>
