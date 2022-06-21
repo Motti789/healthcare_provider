@@ -38,21 +38,21 @@ render() {
     return (
         <Form onSubmit={this.handleSubmit}>
             <Form.Label>Name: </Form.Label>
-            <Form.Control type='text' value={this.state.name} onChange={this.handleChange} name="name"/>
+            <Form.Control type='text' value={this.state.name} onChange={this.handleChange} name="name" required/>
             <Form.Label>Age: </Form.Label>
-              <Form.Control type='text' value={this.state.age} onChange={this.handleChange} name="age"/>
+              <Form.Control type='text' value={this.state.age} onChange={this.handleChange} name="age" required/>
              
              <Form.Label>Date Of Birth: </Form.Label>
-             <Form.Control type='text' placeholder="Date Of Birth"  value={this.state.birth_date} onChange={this.handleChange} name="birth_date"/>
+             <Form.Control type='text'   value={this.state.birth_date} onChange={this.handleChange} name="birth_date" required/>
              
              <Form.Label>Caregiver Name: </Form.Label>
-             <Form.Control type='text' value={this.state.caregiver_name} onChange={this.handleChange} name="caregiver_name"/>
+             <Form.Control type='text' value={this.state.caregiver_name} onChange={this.handleChange} name="caregiver_name" required/>
              
              <Form.Label>Phone Number: </Form.Label>
-             <Form.Control type='text' value={this.state.caregiver_phone_number} onChange={this.handleChange} name="caregiver_phone_number"/>
+             <Form.Control type='text' value={this.state.caregiver_phone_number} onChange={this.handleChange} name="caregiver_phone_number" required/>
              
              <Form.Label>Address: </Form.Label>
-             <Form.Control type='text' value={this.state.address} onChange={this.handleChange} name="address"/>
+             <Form.Control type='text' value={this.state.address} onChange={this.handleChange} name="address" required/>
             
              <Button variant="primary" type="submit">
              Submit
