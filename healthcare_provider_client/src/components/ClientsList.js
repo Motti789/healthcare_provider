@@ -4,10 +4,10 @@ import ClientsForm from "./ClientsForm";
 
 
 const ClientsList = ({clients}) => {
+    
     return (
         <div>
          {clients.map(client => <ul><li key={client.id}><a href={`/clients/${client.id}`}>{client.name}</a> </li></ul>)}
-        
         
         </div>
         

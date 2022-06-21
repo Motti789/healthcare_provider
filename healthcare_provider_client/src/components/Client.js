@@ -9,10 +9,10 @@ import { useParams } from 'react-router-dom';
 const Client = () => {
     const { id } = useParams();
     const client = useSelector(state => state.clients.find(obj => obj.id === parseInt(id)))
-    console.log(client)
+      
     return (
         <div>
-        
+      {client} 
         </div>
         
     );

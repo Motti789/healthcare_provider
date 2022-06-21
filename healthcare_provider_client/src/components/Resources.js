@@ -2,7 +2,7 @@ import React from "react";
 
 
 
-const About = () => {
+const Resources = () => {
     return (
         <div>
      This is an About page <br></br>
@@ -11,4 +11,4 @@ const About = () => {
     )
 }
 
-export default About;
+export default Resources;

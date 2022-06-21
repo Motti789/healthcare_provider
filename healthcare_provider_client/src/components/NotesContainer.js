@@ -13,6 +13,7 @@ class NotesContainer extends Component {
         return(
             <div>
            <NotesForm />
+           
             </div>
         )
     }

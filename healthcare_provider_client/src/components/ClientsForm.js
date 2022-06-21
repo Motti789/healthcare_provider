@@ -41,19 +41,19 @@ render() {
             <Form.Control type='text' value={this.state.name} onChange={this.handleChange} name="name"/>
             <Form.Label>Age: </Form.Label>
               <Form.Control type='text' value={this.state.age} onChange={this.handleChange} name="age"/>
-             <br/> 
+             
              <Form.Label>Date Of Birth: </Form.Label>
              <Form.Control type='text' placeholder="Date Of Birth"  value={this.state.birth_date} onChange={this.handleChange} name="birth_date"/>
-             <br/>
+             
              <Form.Label>Caregiver Name: </Form.Label>
              <Form.Control type='text' value={this.state.caregiver_name} onChange={this.handleChange} name="caregiver_name"/>
-             <br/>
+             
              <Form.Label>Phone Number: </Form.Label>
              <Form.Control type='text' value={this.state.caregiver_phone_number} onChange={this.handleChange} name="caregiver_phone_number"/>
-             <br/>
+             
              <Form.Label>Address: </Form.Label>
              <Form.Control type='text' value={this.state.address} onChange={this.handleChange} name="address"/>
-             <br/>
+            
              <Button variant="primary" type="submit">
              Submit
            </Button>

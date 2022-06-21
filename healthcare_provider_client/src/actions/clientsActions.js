@@ -1,3 +1,5 @@
+
+
 export const fetchClients = () => {
   return(dispatch) => {
     fetch('http://localhost:3000/clients')
@@ -16,5 +18,7 @@ fetch('http://localhost:3000/clients', {
 })
     .then(resp => resp.json())
     .then(client =>dispatch({type: 'ADD_CLIENT', payload: client}) )
+    alert("Client Successfully Added")
+    
 }
 }

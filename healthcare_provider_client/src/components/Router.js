@@ -3,7 +3,7 @@ import { Routes, Route, useParams} from 'react-router-dom'
 
 import Home from '../components/Home'
 import ClientsList from './ClientsList'
-import About from '../components/About'
+import Resources from './Resources'
 import Client from "./Client";
 import NotesList from "./NotesList";
 import ClientsForm from "./ClientsForm";
@@ -17,7 +17,7 @@ const Router = () => {
     return (
        <Routes>
            <Route exact path='/' element={<Home/>} />
-           <Route path='/about' element={<About/>} />
+           <Route path='/resources' element={<Resources/>} />
            <Route  path='/clients' element={<ClientsList/>} />
            <Route  path='/clients/:id' element={<Client/>} />
            <Route  path='/add_client' element={<ClientsForm/>} />

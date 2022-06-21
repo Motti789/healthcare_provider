@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,500&family=Oswald:wght@600&display=swap");
+
+body{
+    background: rgb(0, 0, 112);
+    
+   
+    
+    font-family: 'Josefin Sans', sans-serif;
+    
+    font-size: large;
+    color: rgb(128, 128, 128);
+    font-weight: bold;
+    
+    
+  }
+
+  .card{
+    position: absolute;
+  top: 200px;
+  right: 400;
+  width: 600px;
+  
+  
+  border: 3px solid #73AD21;
+
+  }
+
+  .card-img-top{
+      height: 200;
+  }
