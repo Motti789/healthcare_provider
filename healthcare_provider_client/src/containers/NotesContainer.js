@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import  { fetchNotes }  from '../actions/notesActions'
 
-import Note from  './Note'
+import Note from  '../components/Note'
 
 class NotesContainer extends Component {
 

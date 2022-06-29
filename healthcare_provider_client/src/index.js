@@ -4,7 +4,7 @@ import { Provider } from 'react-redux'
 import { legacy_createStore as createStore, applyMiddleware} from 'redux'
 import thunk from 'redux-thunk'
 import {composeWithDevTools} from 'redux-devtools-extension';
-import Navbar from "../src/components/Navbar";
+
 import { BrowserRouter as Router} from 'react-router-dom'
 
 
@@ -19,7 +19,7 @@ const store = createStore(
 ReactDom.render(
   <Provider store={store}>
     <Router>
-    < Navbar />
+    
     <App />
     </Router>
   </Provider>,

@@ -1,3 +1,4 @@
+
 import React from "react";
 import Client from './Client'
 
@@ -15,7 +16,6 @@ const Note = ({props}) => {
 }
 
 export default Note;
-
 
 
 

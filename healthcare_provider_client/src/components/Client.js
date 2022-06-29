@@ -20,6 +20,8 @@ const Client = (props) => {
 
     const notes = noteId.map(note => <ul class="list"><li  key={note.id}>{note.notes} </li></ul>)
     
+     
+
 
     return (
         <div>
@@ -41,7 +43,5 @@ const mapStateToProps = state => {
 
 
 
-// {client.id} - {client.name} - {client.age} - {client.birth_date} - {client.caregiver_name} - {client.caregiver_phone_number} - {client.address}
-// {client && client.name}
 
 export default connect(mapStateToProps)(Client);
