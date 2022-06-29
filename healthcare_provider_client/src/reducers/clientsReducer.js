@@ -8,5 +8,4 @@ export const clientsReducer = (state = [], action) => {
         default:
              return state
     }
-
 }

@@ -27,6 +27,15 @@ class ClientsForm extends Component {
     handleSubmit = event => {
         event.preventDefault()
         this.props.addClient(this.state)
+        
+        this.setState({
+            name: '',
+            age: '',
+           birth_date: '',
+          caregiver_name: '',
+         caregiver_phone_number: '',
+         address: ''
+        })
     }
 
 

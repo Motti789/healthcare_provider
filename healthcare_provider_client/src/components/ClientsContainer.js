@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import  { fetchClients }  from '../actions/clientsActions'
+import Client from './Client';
 
 
 
@@ -13,7 +14,7 @@ class ClientsContainer extends Component {
     render() {
         return(
             <div>
-           
+          
             </div>
         );
     }

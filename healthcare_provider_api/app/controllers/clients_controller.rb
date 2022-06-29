@@ -4,8 +4,9 @@ class ClientsController < ApplicationController
 
   # GET /clients
   def index
+    
     @clients = Client.all
-
+    
     render json: @clients.to_json(except:[:created_at, :updated_at], include: {client_notes: {except: [:created_at, :updated_at, :client_id]}})
   end
 

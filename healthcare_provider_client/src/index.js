@@ -5,8 +5,8 @@ import { legacy_createStore as createStore, applyMiddleware} from 'redux'
 import thunk from 'redux-thunk'
 import {composeWithDevTools} from 'redux-devtools-extension';
 import Navbar from "../src/components/Navbar";
-import { BrowserRouter as Router, Route, Navlink } from 'react-router-dom'
-import  Footer from '../src/components/Footer'
+import { BrowserRouter as Router} from 'react-router-dom'
+
 
 import App from './components/App'
 import {rootReducer} from './reducers/rootReducer'
