@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,500&family=Oswald:wght@600&display=swap");
 
 body{
-    background: rgb(0, 0, 112);
+    
     
  
     
@@ -35,7 +35,7 @@ body{
     bottom: 0;
     width: 100%;
    
-    color: white;
+    color: black;
     text-align: center;
   }
 

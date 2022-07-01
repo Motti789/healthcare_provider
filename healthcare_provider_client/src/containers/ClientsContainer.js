@@ -8,6 +8,7 @@ import ClientsForm from '../components/ClientsForm';
 
 
 import { Routes, Route} from 'react-router-dom'
+import NotesContainer from './NotesContainer';
 
 
 
@@ -21,7 +22,8 @@ class ClientsContainer extends Component {
         return(
         <Routes>
           <Route  path='/clients' element={<ClientsList/>} />
-          <Route  path='/clients/:id' element={<Client/>} />
+          <Route  path='/clients/:id' element={<><Client/><NotesContainer/></>}/> 
+          
           <Route  path='/add_client' element={<ClientsForm/>} />
             
         </Routes>

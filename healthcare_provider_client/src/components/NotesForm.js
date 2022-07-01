@@ -35,10 +35,10 @@ class NotesForm extends Component {
 
     render() {
         return (
-            <div class="form-group">
+            <div className="form-group">
             <form onSubmit={this.handleSubmit}>
-             <label for="note">Note:</label>
-             <textarea class="form-control" rows="5" id="note" value={this.state.notes} onChange={this.handleChange} required></textarea>
+             <label htmlFor="note">Note:</label>
+             <textarea className="form-control" rows="5" id="note" value={this.state.notes} onChange={this.handleChange} required></textarea>
              <input type='submit' value="Add Note"/>
             </form>
             </div>
