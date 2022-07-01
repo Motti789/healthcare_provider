@@ -4,6 +4,8 @@ import  { fetchNotes }  from '../actions/notesActions'
 import NotesForm from "../components/NotesForm";
 import Note from "../components/Note";
 
+// import { Routes, Route} from 'react-router-dom'
+
 import { useEffect } from 'react';
 
 import { useDispatch } from 'react-redux';
@@ -19,21 +21,21 @@ const NotesContainer = (props) => {
     useEffect(() => {
         dispatch(fetchNotes());
     }, [dispatch]);
-
+     
 
     const { id } = useParams();
     const clientId = useSelector(state => state.clients.find(obj => obj.id === parseInt(id)))
    
     const noteId = useSelector(state => state.notes.filter(note => note.client_id === parseInt(id)))
-    const notes = noteId.map(note => <ul className="list"><li  key={note.id}>{note.notes} </li></ul>)
-    console.log(notes)
+    const notes =  noteId.map(note => note.notes)
+    
       
 
     return(
 
       <div>
       <h4>Client Notes</h4>
-         {notes}
+       {notes.map((note, id) =>  <ul className="list"  key={id} ><li >{note}</li></ul>)}
          <NotesForm client={clientId && clientId.id} />
       </div>
     );

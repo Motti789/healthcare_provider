@@ -7,7 +7,7 @@ const ClientsList = ({clients}) => {
     
     return (
         <div>
-         {clients.map((client, id) =>  <ul><li key={id}><a href={`/clients/${client.id}`}>{client.name}</a> </li></ul>)}
+         {clients.map((client, id) =>  <ul key={id}><li ><a href={`/clients/${client.id}`}>{client.name}</a> </li></ul>)}
         
         </div>
         
