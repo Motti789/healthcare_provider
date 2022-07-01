@@ -2,9 +2,9 @@ import React from "react";
 
 import  { fetchNotes }  from '../actions/notesActions'
 import NotesForm from "../components/NotesForm";
-import Note from "../components/Note";
+import NotesList from "../components/NotesList";
 
-// import { Routes, Route} from 'react-router-dom'
+import { Routes, Route} from 'react-router-dom'
 
 import { useEffect } from 'react';
 
@@ -35,7 +35,7 @@ const NotesContainer = (props) => {
 
       <div>
       <h4>Client Notes</h4>
-       {notes.map((note, id) =>  <ul className="list"  key={id} ><li >{note}</li></ul>)}
+        <NotesList notes={notes.map((note, id) =>  <ul className="list"  key={id} ><li >{note}</li></ul>)} />
          <NotesForm client={clientId && clientId.id} />
       </div>
     );

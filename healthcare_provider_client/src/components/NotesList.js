@@ -5,12 +5,12 @@ import React from "react";
 
 
 
-const Note = ({props}) => {
+const Note = ({notes}) => {
     
     return (
 
     <div>
-    {props.note}
+    {notes}
     </div>
     )
 }
