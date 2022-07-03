@@ -23,7 +23,6 @@ class ClientsContainer extends Component {
         <Routes>
           <Route  path='/clients' element={<ClientsList/>} />
           <Route  path='/clients/:id' element={<><Client/><NotesContainer/></>}/> 
-          
           <Route  path='/add_client' element={<ClientsForm/>} />
             
         </Routes>

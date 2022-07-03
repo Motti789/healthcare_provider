@@ -5,7 +5,6 @@ import { connect } from 'react-redux';
 
 
 
-
 class NotesForm extends Component {
 
     state = {
@@ -23,7 +22,6 @@ class NotesForm extends Component {
 
     
 
-
     handleSubmit = event => {
         event.preventDefault()
         this.props.addNote(this.state.notes, this.props.client)
@@ -37,7 +35,7 @@ class NotesForm extends Component {
         return (
             <div className="form-group">
             <form onSubmit={this.handleSubmit}>
-             <label htmlFor="note">Note:</label>
+             <label htmlFor="note">Session Note:</label>
              <textarea className="form-control" rows="5" id="note" value={this.state.notes} onChange={this.handleChange} required></textarea>
              <input type='submit' value="Add Note"/>
             </form>
@@ -45,11 +43,6 @@ class NotesForm extends Component {
         );
     }
 }
-
-
-
-
-
 
 
 

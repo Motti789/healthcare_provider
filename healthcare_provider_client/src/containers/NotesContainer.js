@@ -4,7 +4,7 @@ import  { fetchNotes }  from '../actions/notesActions'
 import NotesForm from "../components/NotesForm";
 import NotesList from "../components/NotesList";
 
-import { Routes, Route} from 'react-router-dom'
+
 
 import { useEffect } from 'react';
 
@@ -32,7 +32,6 @@ const NotesContainer = (props) => {
       
 
     return(
-
       <div>
       <h4>Client Notes</h4>
         <NotesList notes={notes.map((note, id) =>  <ul className="list"  key={id} ><li >{note}</li></ul>)} />

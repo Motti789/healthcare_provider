@@ -5,8 +5,14 @@ import React from "react";
 const Resources = () => {
     return (
         <div>
-     This is an About page <br></br>
-     I really hope that Yit is going to take some time to write up a blurb for me!!
+        <br></br>
+     <ul>
+         <li><a href="https://www.hrsa.gov">Health Resources Website</a></li>
+     
+         <li><a href="https://www.ghresources.com/">General Healthcare Website</a></li>
+
+         <li><a href="https://www.spectrumhealth.com/">Spectrum Healthcare Website</a></li>
+     </ul>
         </div>
     )
 }
