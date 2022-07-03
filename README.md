@@ -3,7 +3,8 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## healthcare_provider
-Flatiron School React-Redux Project - healthcare_provider is built with a React-Redux frontend and a Rails API backend. healthcare_provider is a app which allows the provider to: 
+Flatiron School React-Redux Project - healthcare_provider is built with a React-Redux frontend and a Rails API backend. <br>
+healthcare_provider is a app which allows the provider to: 
 
 - Keep track of all of the providers clients.
 - Submit new clients information. 
@@ -13,7 +14,7 @@ Flatiron School React-Redux Project - healthcare_provider is built with a React-
 
 Fork and clone this repository to your local machine.
 
-In your terminal, navigate to the backend directory and install the dependencies by executing the below command in your terminal: 
+In your terminal, navigate to the backend directory and install the dependencies by executing the below command in your terminal: <br/>
 $ bundle install
 
 Then execute "rails s" to start the server.
