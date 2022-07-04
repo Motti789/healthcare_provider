@@ -13,8 +13,6 @@ const Client = () => {
     return (
         <div className="client-name">
          Name: {clientId && clientId.name} <br></br> Age: {clientId && clientId.age} <br></br> Date Of Birth: {clientId && clientId.birth_date} <br></br> Caregiver Name: {clientId && clientId.caregiver_name} <br></br> Caregiver Phone Number: {clientId && clientId.caregiver_phone_number} <br></br> Address: {clientId && clientId.address} 
-          <br></br>
-          <br></br>
         </div>
     );
 };
