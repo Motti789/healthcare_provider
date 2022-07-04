@@ -13,6 +13,6 @@ client3 = Client.create(name: "John", age: 10, birth_date: "6/15/2012", caregive
 
 
 
-note1 = ClientNote.create(notes: "Client is active and enjoys mangos", client_id: 1)
+note1 = ClientNote.create(notes: "Client is active and enjoys talking to others", client_id: 1)
 note2 = ClientNote.create(notes: "Client has made alot of progreess with past caregiver", client_id: 2)
 note3 = ClientNote.create(notes: "Client can be violent at times and needs to be taught how to control himself", client_id: 3)

@@ -1,70 +1,64 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,500&family=Oswald:wght@600&display=swap");
 
 body{
-    
-    
- 
-    
+
     font-family: 'Josefin Sans', sans-serif;
-    
     font-size: large;
     color: rgb(128, 128, 128);
     font-weight: bold;
     background-color:aqua
-    
-    
-    
   }
 
+
   .card{
+
   position: absolute;
   top: 150px;
   right: 400;
   width: 600px;
-  
-  
-  
   border: 3px solid #73AD21;
-
   }
 
   .card-img-top{
       height: 200;
-  }
+   }
 
   .footer {
     position: fixed;
     right: 550;
     bottom: 0;
     width: 100%;
-   
     color: black;
     text-align: center;
   }
 
   .form-group {
     position: fixed;
-    width: 50%;
-    left: 300;
+    width: 35%;
+    
+    left: 400;
     bottom: 40;
   }
 
-  .list {
-    
+  .notes-list {
+    padding-top: 7%;
     float: left;
-    padding-left:30px;
-    
+    padding-left:550px;
     text-align:center;
-    
     font-weight: bold;
-    color: rgb(111, 191, 194);
-  
-   
     
   }
 
   .container {
     height: 60px;
+  }
+
+  .client-name {
+    padding-top: 7%;
+    float: left;
+    padding-left:30px;
+    text-align:center;
+    font-weight: bold;
   }
 
 

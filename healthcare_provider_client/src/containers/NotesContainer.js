@@ -32,10 +32,10 @@ const NotesContainer = (props) => {
       
 
     return(
-      <div>
+      <div className="notes-list">
       <h4>Client Notes</h4>
-        <NotesList notes={notes.map((note, id) =>  <ul className="list"  key={id} ><li >{note}</li></ul>)} />
-         <NotesForm client={clientId && clientId.id} />
+        <NotesList notes={notes.map((note, id) =>  <ul   key={id} ><li >{note}</li></ul>)} />
+        <NotesForm client={clientId && clientId.id} />
       </div>
     );
 };

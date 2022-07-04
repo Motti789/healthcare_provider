@@ -3,8 +3,7 @@ export const notesReducer = (state = [], action) => {
         case 'FETCH_NOTES':
          return action.payload
          case 'ADD_NOTE':
-             return [...state, action.payload]
-             
+             return [...state, action.payload]   
          default:
              return state
     }

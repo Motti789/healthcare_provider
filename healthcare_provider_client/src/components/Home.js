@@ -21,7 +21,6 @@ const Home = () => {
       </Card.Body>
     </Card>
   );
-
 }
 
 export default Home;
