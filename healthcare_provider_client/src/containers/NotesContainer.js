@@ -25,7 +25,7 @@ const NotesContainer = (props) => {
    
     const noteId = useSelector(state => state.notes.filter(note => note.client_id === parseInt(id)))
     const notes =  noteId.map(note => note.notes)
-    
+
     
     return(
       <div className="notes-list">
