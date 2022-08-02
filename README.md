@@ -23,7 +23,9 @@ Next, run the following commands in the terminal to set up the local database:
 
 
 rails db:create
+<br>
 rails db:migrate
+<br>
 rails db:seed
 
 
