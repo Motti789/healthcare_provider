@@ -10,6 +10,9 @@ healthcare_provider is a app which allows the provider to:
 - Submit new clients information. 
 - Add session notes for a specific client.
 
+## Demo
+[Healthcare Provider](https://youtu.be/3Jy239mGayw)
+
 ## Getting Started
 
 Fork and clone this repository to your local machine.
